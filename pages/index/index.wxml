@@ -14,6 +14,32 @@
   <text>{{ person.name }}</text>
   <text>{{ person.age }}</text>
 
+
+  <!-- 
+   mustache语法可以用在：
+   1. innerHTML(类似，小程序没有这个)
+   2. 元素的属性上
+   不能用在 标签名 和 属性名 上面，只能用在 值 上面
+   -->
+
+
+   <view class="world {{ viewClassName }}"></view>
+
+
+   <!-- 
+   可以直接使用字面量和简单的逻辑运算符
+ -->
+
+   <text>{{ 'hello' }}</text>
+   <text>{{ 111 }}</text>
+   <text>{{ 111 + 999 }}</text>
+   <text>{{ 100 > 50 ? '你对了' : '你错了' }}</text>
+
+<!-- 
+  当语法解析误解了true和false的情况 可以使用mustache语法 {{}} 解决
+ -->
+  <checkbox checked='{{ false }}'></checkbox>
+
   <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
