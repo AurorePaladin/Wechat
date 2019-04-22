@@ -1,4 +1,13 @@
 //app.js
+console.log('==============================')
+
+// 1.小程序不是运行在浏览器中，所以没有BOM和DOM对象
+// console.log(window)    => undefined
+// console.log(document)  => undefined
+
+
+
+console.log('==============================')
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -35,5 +44,9 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  foo:function () {
+    console.log(123)
   }
+
 })
