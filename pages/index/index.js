@@ -20,13 +20,19 @@ Page({
   //    item: 'hahaha'
   // }
 
-  buttonTapHandle: function(e) {
-    console.log(111)
-    // console.dir() 讲一个对象以树状的形式打印到控制台
-    console.dir(e)
-  }
+  // buttonTapHandle: function(e) {
+  //   console.log(111)
+  //   // console.dir() 讲一个对象以树状的形式打印到控制台
+  //   console.dir(e)
+  // }
  
+ innerHandle: function () {
+   console.log('inner')
+ },
 
+ outterHandle: function () {
+  console.log('outter')
+}
 
   // data: {
   //   motto: 'Hello World',

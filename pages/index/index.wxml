@@ -99,9 +99,13 @@
     <text class="user-motto">{{motto}}</text>
   </view> -->
 
+<!-- 基本的事件使用 就是通过给组件天剑一个 bind+事件名 的属性，属性的值指向一个定义在当前页面对象中的JS方法 -->
+  <!-- <button bindtap='buttonTapHandle'>点我</button> -->
 
-  <button bindtap='buttonTapHandle'>点我</button>
-
-
-
+<!-- 事件冒泡 -->
+<view  bindtap="outterHandle" style='width:200px;height:200px;background-color:red'>
+ <view catchtap='innerHandle' style='width:100px;height:100px;background-color:blue'>
+ <!-- catch+事件名 是绑定事件并阻止冒泡 -->
+ </view>
+</view>
 </view>
