@@ -5,7 +5,11 @@ console.log('==============================')
 // console.log(window)    => undefined
 // console.log(document)  => undefined
 
-
+// 2.小程序的JS中有一些额外的成员
+// App 方法 用于定义应用程序实例对象
+// Page 方法 用于定义页面对象
+// getApp 方法 用来获取全局应用程序对象
+// getCurrentPages 方法 用来获取当前页面的调用栈
 
 console.log('==============================')
 App({
