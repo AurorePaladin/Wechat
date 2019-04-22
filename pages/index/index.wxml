@@ -103,9 +103,18 @@
   <!-- <button bindtap='buttonTapHandle'>点我</button> -->
 
 <!-- 事件冒泡 -->
-<view  bindtap="outterHandle" style='width:200px;height:200px;background-color:red'>
- <view catchtap='innerHandle' style='width:100px;height:100px;background-color:blue'>
  <!-- catch+事件名 是绑定事件并阻止冒泡 -->
+<!-- <view  bindtap="outterHandle" style='width:200px;height:200px;background-color:red'>
+ <view catchtap='innerHandle' style='width:100px;height:100px;background-color:blue'>
  </view>
-</view>
+</view> -->
+
+<!-- 事件传参 -->
+<button bindtap='tap2Handle' data-name="张三">点我</button>
+<button bindtap='tap2Handle' data-hello-world="张三">点我</button>
+<!--
+1. 事件的基本使用 bind[xxx] catch[xxx]
+2. 小程序中的事件冒泡和HTML中处理起来不一样 这里是使用catch[xxx]
+3. 如果需要给事件处理函数指定参数只能通过dataset方式
+ -->
 </view>

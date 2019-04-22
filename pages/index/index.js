@@ -32,6 +32,13 @@ Page({
 
  outterHandle: function () {
   console.log('outter')
+},
+
+tap2Handle: function (e) {
+  // e.target 拿到的就是点击的元素
+  // dateset 指的是元素上以 date- 开头的属性集合
+  console.dir(e.target.dataset)
+  // console.log(this) // 事件处理函数中的this指向的还是页面对象！！！！跟HTML开发不一样
 }
 
   // data: {
