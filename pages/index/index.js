@@ -5,19 +5,25 @@ const app = getApp()
 Page({
   // 为页面提供数据的
   // data就是界面和逻辑之间的桥梁
-  data: {
-     message: 'hello world',
-     person: {
-       name: '张三',
-       age: 18
-     },
-     viewClassName : 'hello',
-     todos: [
-       { name: 'JavaScript', completed: false } ,
-       { name: 'HTML', completed: true } ,
-       { name: 'CSS', completed: false } 
-     ],
-     item: 'hahaha'
+  // data: {
+  //    message: 'hello world',
+  //    person: {
+  //      name: '张三',
+  //      age: 18
+  //    },
+  //    viewClassName : 'hello',
+  //    todos: [
+  //      { name: 'JavaScript', completed: false } ,
+  //      { name: 'HTML', completed: true } ,
+  //      { name: 'CSS', completed: false } 
+  //    ],
+  //    item: 'hahaha'
+  // }
+
+  buttonTapHandle: function(e) {
+    console.log(111)
+    // console.dir() 讲一个对象以树状的形式打印到控制台
+    console.dir(e)
   }
  
 

@@ -9,10 +9,10 @@
 
 <view class="container">
   <!-- 这种{{}}的语法叫做 mustache  -->
-  <text> {{ message }}</text>
+  <!-- <text> {{ message }}</text>
 
   <text>{{ person.name }}</text>
-  <text>{{ person.age }}</text>
+  <text>{{ person.age }}</text> -->
 
 
   <!-- 
@@ -23,22 +23,22 @@
    -->
 
 
-   <view class="world {{ viewClassName }}"></view>
+   <!-- <view class="world {{ viewClassName }}"></view> -->
 
 
    <!-- 
    可以直接使用字面量和简单的逻辑运算符
  -->
 
-   <text>{{ 'hello' }}</text>
+   <!-- <text>{{ 'hello' }}</text>
    <text>{{ 111 }}</text>
    <text>{{ 111 + 999 }}</text>
-   <text>{{ 100 > 50 ? '你对了' : '你错了' }}</text>
+   <text>{{ 100 > 50 ? '你对了' : '你错了' }}</text> -->
 
 <!-- 
   当语法解析误解了true和false的情况 可以使用mustache语法 {{}} 解决
  -->
-  <checkbox checked='{{ false }}'></checkbox>
+  <!-- <checkbox checked='{{ false }}'></checkbox> -->
 
 
 
@@ -60,12 +60,12 @@
   <text>CSS</text>
 </view> -->
 
-<view wx:for="{{ todos }}" wx:key="todosid" wx:for-item="aaa" wx:for-index="i">
+<!-- <view wx:for="{{ todos }}" wx:key="todosid" wx:for-item="aaa" wx:for-index="i">
   <text>{{ i }}</text>
   <checkbox checked='{{ aaa.completed }}'></checkbox>
-  <text>{{ aaa.name }}</text>
+  <text>{{ aaa.name }}</text> -->
   <!-- 如果全局属性中有item这种关键词，可以使用wx:for-item去给当前遍历数据起名字 -->
-  <text>{{ item }}</text>
+  <!-- <text>{{ item }}</text> -->
 
   <!-- 
   基本的循环 wx:for
@@ -77,14 +77,14 @@
   给遍历的下标 <索引> wx:for-index
    -->
    
-</view>
+<!-- </view>
 <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
   <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
     <view wx:if="{{i <= j}}">
       {{i}} * {{j}} = {{i * j}}
     </view>
   </view>
-</view>
+</view> -->
 
 
 
@@ -98,4 +98,10 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view> -->
+
+
+  <button bindtap='buttonTapHandle'>点我</button>
+
+
+
 </view>
