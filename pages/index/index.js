@@ -6,12 +6,18 @@ Page({
   // 为页面提供数据的
   // data就是界面和逻辑之间的桥梁
   data: {
-     message : 'hello world',
-     person : {
-       name : '张三',
-       age : 18
+     message: 'hello world',
+     person: {
+       name: '张三',
+       age: 18
      },
-     viewClassName : 'hello'
+     viewClassName : 'hello',
+     todos: [
+       { name: 'JavaScript', completed: false } ,
+       { name: 'HTML', completed: true } ,
+       { name: 'CSS', completed: false } 
+     ],
+     item: 'hahaha'
   }
  
 
