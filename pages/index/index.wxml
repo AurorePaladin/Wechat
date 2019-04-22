@@ -1,6 +1,20 @@
 <!--index.wxml-->
+<!-- 
+   框架最大的特点就是让开发者必须按照特定的方式编写代码
+ -->
+<!-- 
+   1.数据在哪儿   当前页面的data属性中！
+   2.绑定到哪里去  想绑定到哪儿就在哪里用mustache语法输出
+ -->
+
 <view class="container">
-  <view class="userinfo">
+  <!-- 这种{{}}的语法叫做 mustache  -->
+  <text> {{ message }}</text>
+
+  <text>{{ person.name }}</text>
+  <text>{{ person.age }}</text>
+
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -9,5 +23,5 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
 </view>

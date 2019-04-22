@@ -7,3 +7,9 @@ function say (msg){
 module.exports = {
   say : say
 }
+
+// 不支持export.xxx 只支持module.exports
+
+// export.say = {
+
+// }
