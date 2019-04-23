@@ -123,10 +123,33 @@
  <text>{{ message }}</text> -->
 
  <!-- 登录页面案例 -->
-
- <view class='inputs'>
+ <!-- verson 1 -->
+ <!-- <view class='inputs'>
    <input class='username' placeholder='请输入用户名' value='{{ username }}' bindinput='usernameChangeHandle'/>
    <input class='password' type='password' placeholder='请输入密码' value='{{ password }}' bindinput='passwordChangeHandle'/>
+ </view>
+ <view class='buttons'>
+   <button class='primary' bindtap='loginHandle'>登录</button>
+   <button class='default'>注册</button>
+ </view> -->
+
+ <!-- verson 2 -->
+ <view class='inputs'>
+   <input 
+    class='username' 
+    placeholder='请输入用户名' 
+    value='{{ username }}' 
+    bindinput='inputChangeHandle' 
+    data-prop='username'
+    />
+   <input 
+    class='password' 
+    type='password' 
+    placeholder='请输入密码' 
+    value='{{ password }}'
+    bindinput='inputChangeHandle' 
+    data-prop='password'
+    />
  </view>
  <view class='buttons'>
    <button class='primary' bindtap='loginHandle'>登录</button>

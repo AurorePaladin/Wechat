@@ -120,13 +120,16 @@ tap2Handle: function (e) {
     username: 'admin',
     password: '123'
   },
+
+
+  /* 登录页 verson 1
   usernameChangeHandle: function (e) {
     this.setData({
   // this.data.username = e.detail.value 不要用这种方式，因为界面层无法得知
        username: e.detail.value
     })
   },
-
+  
   passwordChangeHandle: function (e) {
     this.setData({
   // this.data.password = e.detail.value 不要用这种方式，因为界面层无法得知
@@ -144,4 +147,27 @@ tap2Handle: function (e) {
     // 3. 根据判断的结果做出相应
     // console.log(123)
   }
+  */
+
+  /* 登录页 verson 2 */
+  inputChangeHandle: function (e) {
+    // var prop = 'username' // 可变的
+    var prop = e.target.dataset.prop
+    var changed ={}
+    changed[prop] = e.detail.value
+    this.setData(changed)
+  },
+
+
+  // 用于处理登录按钮点击的事件
+
+  loginHandle: function () {
+    // TODO: 完成逻辑
+    // 1. 需要知道用户输入了什么
+    console.log(this.data)
+    // 2. 根据用户输入的值判断
+    // 3. 根据判断的结果做出相应
+    // console.log(123)
+  }
+
 })
