@@ -39,7 +39,7 @@ tap2Handle: function (e) {
   // dateset 指的是元素上以 date- 开头的属性集合
   console.dir(e.target.dataset)
   // console.log(this) // 事件处理函数中的this指向的还是页面对象！！！！跟HTML开发不一样
-}
+},
 
   // data: {
   //   motto: 'Hello World',
@@ -90,4 +90,22 @@ tap2Handle: function (e) {
   //     hasUserInfo: true
   //   })
   // }
+
+  data: {
+    demo: 11,
+    message: 'initial'
+  },
+  inputhandle: function (e) {
+    // console.log(123)
+    // console.log(e.detail.value)
+    // this.data.message = e.detail.value
+    // console.log(this.data.message)
+    this.setData({
+       message: e.detail.value
+    })
+    console.log(this.data)
+    // this.setData是用来改变data中的数据
+    // 与直接赋值在于setData可以通知界面做出变化
+    // 直接赋值没有办法实现这一点（早期的JS）
+  }
 })
