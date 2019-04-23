@@ -117,6 +117,19 @@
 2. 小程序中的事件冒泡和HTML中处理起来不一样 这里是使用catch[xxx]
 3. 如果需要给事件处理函数指定参数只能通过dataset方式
  -->
- <input value='{{ message }}' bindinput='inputhandle'/>
- <text>{{ message }}</text>
+
+ <!-- 单向数据流及绑定 -->
+ <!-- <input value='{{ message }}' bindinput='inputhandle'/>
+ <text>{{ message }}</text> -->
+
+ <!-- 登录页面案例 -->
+
+ <view class='inputs'>
+   <input class='username' placeholder='请输入用户名' value='{{ username }}' bindinput='usernameChangeHandle'/>
+   <input class='password' type='password' placeholder='请输入密码' value='{{ password }}' bindinput='passwordChangeHandle'/>
+ </view>
+ <view class='buttons'>
+   <button class='primary' bindtap='loginHandle'>登录</button>
+   <button class='default'>注册</button>
+ </view>
 </view>

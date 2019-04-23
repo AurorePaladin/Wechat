@@ -91,10 +91,10 @@ tap2Handle: function (e) {
   //   })
   // }
 
-  data: {
-    demo: 11,
-    message: 'initial'
-  },
+  // data: {
+  //   demo: 11,
+  //   message: 'initial'
+  // },
   inputhandle: function (e) {
     // console.log(123)
     // console.log(e.detail.value)
@@ -107,5 +107,41 @@ tap2Handle: function (e) {
     // this.setData是用来改变data中的数据
     // 与直接赋值在于setData可以通知界面做出变化
     // 直接赋值没有办法实现这一点（早期的JS）
+  },
+
+   
+/* 
+1. 设计数据的解构（data属性）
+2. 将数据绑定到特定的元素上
+3. 登录按钮的点击时间（具体的登录逻辑）
+ */
+
+  data: {
+    username: 'admin',
+    password: '123'
+  },
+  usernameChangeHandle: function (e) {
+    this.setData({
+  // this.data.username = e.detail.value 不要用这种方式，因为界面层无法得知
+       username: e.detail.value
+    })
+  },
+
+  passwordChangeHandle: function (e) {
+    this.setData({
+  // this.data.password = e.detail.value 不要用这种方式，因为界面层无法得知
+      password: e.detail.value
+    })
+  },
+
+  // 用于处理登录按钮点击的事件
+
+  loginHandle: function () {
+    // TODO: 完成逻辑
+    // 1. 需要知道用户输入了什么
+    console.log(this.data)
+    // 2. 根据用户输入的值判断
+    // 3. 根据判断的结果做出相应
+    // console.log(123)
   }
 })
