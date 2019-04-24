@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!-- index.wxml
 <!-- 
    框架最大的特点就是让开发者必须按照特定的方式编写代码
  -->
@@ -7,7 +7,6 @@
    2.绑定到哪里去  想绑定到哪儿就在哪里用mustache语法输出
  -->
 
-<view class="container">
   <!-- 这种{{}}的语法叫做 mustache  -->
   <!-- <text> {{ message }}</text>
 
@@ -134,7 +133,7 @@
  </view> -->
 
  <!-- verson 2 -->
- <view class='inputs'>
+ <!-- <view class='inputs'>
    <input 
     class='username' 
     placeholder='请输入用户名' 
@@ -154,5 +153,24 @@
  <view class='buttons'>
    <button class='primary' bindtap='loginHandle'>登录</button>
    <button class='default'>注册</button>
+ </view> -->
+
+<form>
+<view class='inputs'>
+   <input 
+    class='username' 
+    name='username'
+    placeholder='请输入用户名' 
+    value='{{ username }}'/>
+   <input
+    class='password' 
+    name='password'
+    type='password' 
+    placeholder='请输入密码' 
+    value='{{ password }}'/> 
  </view>
-</view>
+ <view class='buttons'>
+   <button class='primary' form-type="submit">登录</button>
+   <button class='default'>注册</button>
+ </view>
+</form>

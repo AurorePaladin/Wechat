@@ -26,20 +26,20 @@ Page({
   //   console.dir(e)
   // }
  
- innerHandle: function () {
-   console.log('inner')
- },
+//  innerHandle: function () {
+//    console.log('inner')
+//  },
 
- outterHandle: function () {
-  console.log('outter')
-},
+//  outterHandle: function () {
+//   console.log('outter')
+// },
 
-tap2Handle: function (e) {
-  // e.target 拿到的就是点击的元素
-  // dateset 指的是元素上以 date- 开头的属性集合
-  console.dir(e.target.dataset)
-  // console.log(this) // 事件处理函数中的this指向的还是页面对象！！！！跟HTML开发不一样
-},
+// tap2Handle: function (e) {
+//   // e.target 拿到的就是点击的元素
+//   // dateset 指的是元素上以 date- 开头的属性集合
+//   console.dir(e.target.dataset)
+//   // console.log(this) // 事件处理函数中的this指向的还是页面对象！！！！跟HTML开发不一样
+// },
 
   // data: {
   //   motto: 'Hello World',
@@ -95,19 +95,19 @@ tap2Handle: function (e) {
   //   demo: 11,
   //   message: 'initial'
   // },
-  inputhandle: function (e) {
-    // console.log(123)
-    // console.log(e.detail.value)
-    // this.data.message = e.detail.value
-    // console.log(this.data.message)
-    this.setData({
-       message: e.detail.value
-    })
-    console.log(this.data)
-    // this.setData是用来改变data中的数据
-    // 与直接赋值在于setData可以通知界面做出变化
-    // 直接赋值没有办法实现这一点（早期的JS）
-  },
+  // inputhandle: function (e) {
+  //   // console.log(123)
+  //   // console.log(e.detail.value)
+  //   // this.data.message = e.detail.value
+  //   // console.log(this.data.message)
+  //   this.setData({
+  //      message: e.detail.value
+  //   })
+  //   console.log(this.data)
+  //   // this.setData是用来改变data中的数据
+  //   // 与直接赋值在于setData可以通知界面做出变化
+  //   // 直接赋值没有办法实现这一点（早期的JS）
+  // },
 
    
 /* 
@@ -150,24 +150,30 @@ tap2Handle: function (e) {
   */
 
   /* 登录页 verson 2 */
-  inputChangeHandle: function (e) {
-    // var prop = 'username' // 可变的
-    var prop = e.target.dataset.prop
-    var changed ={}
-    changed[prop] = e.detail.value
-    this.setData(changed)
-  },
+  // inputChangeHandle: function (e) {
+  //   // var prop = 'username' // 可变的
+  //   var prop = e.target.dataset['prop']
+  //   var changed ={}
+  //   changed[prop] = e.detail.value
+
+  //   this.setData(changed)
+  // },
 
 
   // 用于处理登录按钮点击的事件
 
-  loginHandle: function () {
-    // TODO: 完成逻辑
-    // 1. 需要知道用户输入了什么
-    console.log(this.data)
-    // 2. 根据用户输入的值判断
-    // 3. 根据判断的结果做出相应
-    // console.log(123)
-  }
+  // loginHandle: function () {
+  //   // TODO: 完成逻辑
+  //   // 1. 需要知道用户输入了什么
+  //   console.log(this.data)
+  //   // 2. 根据用户输入的值判断
+  //   // 3. 根据判断的结果做出相应
+  //   // console.log(123)
+  // },
 
+  // 表单版本form提交
+
+  loginHandle: function (e) {
+    console.log(e)
+  }
 })
