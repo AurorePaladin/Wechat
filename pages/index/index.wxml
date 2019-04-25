@@ -194,4 +194,18 @@
  </view>
 <!-- 内容区域 自适应高度 -->
  <view class='content'></view>
+ <view class='player'>
+  <view class='poster'>
+    <image src='../image/The Flash.jpg'></image>
+  </view>
+  <view class='info'>
+     <text class='title'>可惜没如果</text>
+     <text catchlongtap='article'>林俊杰</text>
+  </view>
+  <view class='controls'>
+    <image src='../image/theron1.jpg'></image>
+    <image src='../image/theron2.jpg'></image>
+    <image src='../image/theron3.jpg'></image>
+  </view>
+ </view>
 </view>

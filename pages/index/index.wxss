@@ -56,6 +56,37 @@ page {
 }
 
 .content {
-  flex: 2;
+  flex: 1;
   background-color: yellow;
+}
+
+.player {
+  display: flex;
+  height: 50px;
+  background-color: #17181A;
+}
+
+.poster image{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.info {
+  flex: 1;
+  color: #888;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.info .title {
+  display: block;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.controls image{
+  width: 40px;
+  height: 40px;
+  margin: 5px 2px;
 }
