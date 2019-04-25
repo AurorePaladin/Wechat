@@ -38,15 +38,24 @@ page {
 }
 
 .tabs {
-  height: 50px;
+  display: flex;
   background-color: pink;
 }
+
+.tabs .item{
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  background-color: #222;
+  color: #ccc;
+  padding:  8px 0;
+}
+.tabs .item.active {
+  color: #fff;
+  border-bottom: 2px solid #e9232c;
+}
+
 .content {
   flex: 2;
   background-color: yellow;
-}
-
-.content2 {
-  flex: 1;
-  background-color: blue;
 }
