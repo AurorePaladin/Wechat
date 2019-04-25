@@ -193,7 +193,28 @@
   </view>
  </view>
 <!-- 内容区域 自适应高度 -->
- <view class='content'></view>
+ <view class='content'>
+  <view class='slide'>
+    <image src='../image/theron5.jpg'></image>
+  </view>
+  <view class='portals'>
+    <view class='item'>
+      <image src='../image/theron6.jpg'></image>
+      <text>私人FM</text>
+    </view>
+    <view class='item'>
+      <image src='../image/theron7.jpg'></image>
+      <text>每日歌曲推荐</text>
+    </view>
+    <view class='item'>
+      <image src='../image/theron2.jpg'></image>
+      <text>云音乐</text>
+    </view>
+  </view>
+  <view class='list'>
+
+  </view>
+ </view>
  <view class='player'>
   <view class='poster'>
     <image src='../image/The Flash.jpg'></image>

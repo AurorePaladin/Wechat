@@ -57,7 +57,34 @@ page {
 
 .content {
   flex: 1;
-  background-color: yellow;
+  background-color: #111214;
+  color: #ccc;
+}
+
+.slide image {
+  width: 750rpx;
+  height: 130px;
+}
+
+.portals {
+  display: flex;
+}
+
+.portals .item{
+  flex: 1;
+}
+
+.portals .item image{
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 10px auto;
+}
+
+.portals .item text{
+  display: block;
+  font-size: 12px;
+  text-align: center;
 }
 
 .player {
