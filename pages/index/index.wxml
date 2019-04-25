@@ -155,7 +155,7 @@
    <button class='default'>注册</button>
  </view> -->
 
-<form>
+<!-- <form>
 <view class='inputs'>
    <input 
     class='username' 
@@ -173,4 +173,13 @@
    <button class='primary' form-type="submit">登录</button>
    <button class='default'>注册</button>
  </view>
-</form>
+</form> -->
+
+
+<view class='root'>
+<!-- 标签栏的页签 固定高度 -->
+ <view class='tabs'></view>
+<!-- 内容区域 自适应高度 -->
+ <view class='content'></view>
+ <view class='content2'></view>
+</view>
