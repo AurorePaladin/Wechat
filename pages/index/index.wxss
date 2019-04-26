@@ -59,6 +59,7 @@ page {
   flex: 1;
   background-color: #111214;
   color: #ccc;
+  overflow: hidden;
 }
 
 .slide image {
@@ -68,6 +69,7 @@ page {
 
 .portals {
   display: flex;
+  margin-bottom: 15px;
 }
 
 .portals .item{
@@ -85,6 +87,31 @@ page {
   display: block;
   font-size: 12px;
   text-align: center;
+}
+
+.list .title{
+  margin: 10px 10px;
+  font-size: 14px;
+}
+
+.list .inner{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list .inner .item {
+  width: 33.33333%;
+}
+
+.list .inner .item image{
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.list .inner .item text{
+  font-size: 14px;
 }
 
 .player {

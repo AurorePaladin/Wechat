@@ -193,7 +193,7 @@
   </view>
  </view>
 <!-- 内容区域 自适应高度 -->
- <view class='content'>
+ <scroll-view class='content' scroll-y>
   <view class='slide'>
     <image src='../image/theron5.jpg'></image>
   </view>
@@ -212,9 +212,38 @@
     </view>
   </view>
   <view class='list'>
-
+    <view class='title'>
+      <text>推荐歌单</text>
+    </view>
+    <view class='inner'>
+      
+      <view class='item'>
+        <image src='../image/The Flash.jpg'></image>
+        <text>可惜没如果</text>
+      </view>
+      <view class='item'>
+        <image src='../image/The Flash.jpg'></image>
+        <text>可惜没如果</text>
+      </view>
+      <view class='item'>
+        <image src='../image/The Flash.jpg'></image>
+        <text>可惜没如果</text>
+      </view>
+      <view class='item'>
+        <image src='../image/The Flash.jpg'></image>
+        <text>可惜没如果</text>
+      </view>
+      <view class='item'>
+        <image src='../image/The Flash.jpg'></image>
+        <text>可惜没如果</text>
+      </view>
+      <view class='item'>
+        <image src='../image/The Flash.jpg'></image>
+        <text>可惜没如果</text>
+      </view>
+    </view>
   </view>
- </view>
+ </scroll-view>
  <view class='player'>
   <view class='poster'>
     <image src='../image/The Flash.jpg'></image>
